@@ -1,0 +1,22 @@
+{
+  "folders": [
+	{
+		"path": "../../../../CodingChallenges"
+	},
+	{
+		"path": "../../../../dreamCatcher_v4 "
+	},
+	{
+		"path": "../../../../Commute-Cost-Calculator"
+	},
+	{
+		"path": "../../../../Portfolio_Site_v3"
+	},
+	{
+		"path": "../../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Portfolio_Site_v3"
+  }
+}
