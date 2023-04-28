@@ -11,7 +11,7 @@ const Discover = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   if (isFetching) return <Loader title="Loading Songs..." />;
   if (error) return <Error />;
-
+  console.log(data.tracks);
   return (
     <div className="flex flex-col mx-auto">
       <div className="w-full flex justify-center items-center sm:flex-row flex-col mt-4 mb-10">
