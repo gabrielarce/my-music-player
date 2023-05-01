@@ -11,7 +11,7 @@ const Discover = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   if (isFetching) return <Loader title="Loading Songs..." />;
   if (error) return <Error />;
-  console.log(data.tracks);
+  console.log(data);
   return (
     <div className="flex flex-col mx-auto">
       <div className="w-full flex justify-center items-center sm:flex-row flex-col mt-4 mb-10">
@@ -31,7 +31,7 @@ const Discover = () => {
         </select>
       </div>
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
-        {data.tracks?.map((song, i) => (
+        {data?.map((song, i) => (
           <SongCard
             key={song.key}
             song={song}
